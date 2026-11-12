@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-washi: #F9F7F2;
+    --color-sumi: #1E2221;
+    --color-hinoki: #C9935B;
+    --color-tatami: #7E9169;
+  }
+
+  body {
+    background-color: #F7F4EC;
+    color: #1E2221;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+}
+
+/* Professional Architectural CAD Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #EFE9DC;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C5BBAA;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A69B89;
+}
+
+/* CAD Canvas cursor styles */
+.cursor-pan {
+  cursor: grab;
+}
+
+.cursor-panning {
+  cursor: grabbing;
+}
+
+.cursor-crosshair-cad {
+  cursor: crosshair;
+}
+
